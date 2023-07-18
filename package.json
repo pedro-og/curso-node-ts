@@ -1,0 +1,32 @@
+{
+  "name": "curso-node",
+  "version": "1.0.0",
+  "description": "Typescript Node.js API",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "yarn build && node dist/src/index.js",
+    "start:dev": "ts-node-dev src/index.ts",
+    "lint": "eslint ./src ./test --ext .ts",
+    "lint:fix": "eslint ./src ./test --ext .ts --fix"
+  },
+  "keywords": [
+    "node.js",
+    "typescript",
+    "api"
+  ],
+  "author": "Pedro Gonzaga",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/module-alias": "^2.0.1",
+    "@types/node": "^20.4.2",
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "@typescript-eslint/parser": "^6.1.0",
+    "eslint": "^8.45.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "module-alias": "^2.2.3"
+  }
+}
